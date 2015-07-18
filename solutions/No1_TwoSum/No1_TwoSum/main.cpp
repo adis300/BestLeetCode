@@ -7,11 +7,12 @@
 //
 
 #include <iostream>
+//#include<map>
 #include <vector>
 using namespace std;
 
 // ---------------------------------------------------------------------
-//       This is the fastest colution
+//    8ms           This is the fastest solution
 // ---------------------------------------------------------------------
 
 typedef pair<int, int> Pair;
@@ -75,7 +76,7 @@ int main(int argc, const char * argv[]) {
 }
 
 // ---------------------------------------------------------------------
-//       This is an pretty elegant solution with hash map/dictionary
+//     24ms  This is an elegant solution with hash map/dictionary
 // ---------------------------------------------------------------------
 
 //class Solution {
