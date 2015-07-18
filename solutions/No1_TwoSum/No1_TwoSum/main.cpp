@@ -2,7 +2,7 @@
 //  main.cpp
 //  No1_TwoSum
 //
-//  Created by Disi A Innovation on 7/15/15.
+//  Created by Disi A on 7/15/15.
 //  Copyright (c) 2015 VoteBin.com. All rights reserved.
 //
 
@@ -56,7 +56,7 @@ public:
                 if (left < right) return {left + 1, right + 1};
                 else return {right + 1,left + 1};
             }
-
+            
         }
         
         // If result is not reasonable return a {0, 0} vector
@@ -98,4 +98,3 @@ int main(int argc, const char * argv[]) {
 //        return {0,0};
 //    }
 //};
-
