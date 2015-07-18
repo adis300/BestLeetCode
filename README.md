@@ -6,11 +6,11 @@ This is an unofficial FAST(est) C++ solution set to problem sets in LeetCode.com
 Warning: This repository targets at speed. Some solutions are elegant while some are not. Some objects are not deleted because I am targeting at the speed bench mark on LeetCode.com just for fun.
 
 ## Why I create it.
-Some of my colleagues spend a lot of time on LeetCode.com either for job seeking or sharpening their skills. I became curious and tried to solve a few problems on it. When my solution runs slower than other solutions, I feel unsatisfied. I tried improving my solution as well as searching for better solutions online. I found people posting meaning less just-working solutions here and there in blogs; lots of solutions are not neat nor fast. So I read through the nice ones, try to optimize them and create better solution for myself. I hope this repository that I am editing can help people write simple or performant code as they wish. Writing readable and elegant solutions are easy for most advanced developers but being flexible enough to find a balance between speed and conciseness is an art.
+Some of my colleagues spend a lot of time on LeetCode.com either for job seeking or sharpening their skills. I became curious and tried to solve a few problems on it. When my solutions run slower than others' solutions, I feel unsatisfied. I tried improving my solution as well as searching for better solutions online. I found people posting garbage just-working solutions here and there in blogs; lots of solutions are not even neat nor fast. I read through the nice ones to get inspiration think about the problem and try to come up with the fastest approach. I hope this repository that I am editing can help people write simple or performant code as they wish. For most advanced developers, writing readable and elegant solutions is a piece of cake but being flexible enough to find a balance between performance and conciseness is an art.
 
 ## Editing plan
-I will try to push 1-2 solution per week. 
-I will try to make the solutions self explanatory and put alternative solutions below.
+I will try to push 0-5 solution per week. Maybe videos later to explain each solution.
+I will try my best to make the solutions self explanatory with proper comments and put alternative elegant at the end of code.
 
 Any suggestion/advice/correction are welcome. You can either commit to my repo or email me at <adis@live.cn>. 
 
