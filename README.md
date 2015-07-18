@@ -3,6 +3,8 @@
 ## What is it?
 This is an unofficial FAST(est) C++ solution set to problem sets in LeetCode.com. We hope this repository can help people to write flexible programs.
 
+Warning: This repository targets at speed. Some solutions are elegant while some are not. Some objects are not deleted because I am targeting at the speed bench mark on LeetCode.com just for fun.
+
 ## Why I create it.
 Some of my colleagues spend a lot of time on LeetCode.com either for job seeking or sharpening their skills. I became curious and tried to solve a few problems on it. When my solution runs slower than other solutions, I feel unsatisfied. I tried improving my solution as well as searching for better solutions online. I found people posting meaning less just-working solutions here and there in blogs; lots of solutions are not neat nor fast. So I read through the nice ones, try to optimize them and create better solution for myself. I hope this repository that I am editing can help people write simple or performant code as they wish. Writing readable and elegant solutions are easy for most advanced developers but being flexible enough to find a balance between speed and conciseness is an art.
 
