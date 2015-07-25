@@ -10,7 +10,10 @@
  Given a string, find the length of the longest substring without repeating characters. For example, the longest substring without repeating letters for "abcabcbb" is "abc", which the length is 3. For "bbbbb" the longest substring is "b", with the length of 1.
  */
 
-// Solution:
+
+// -------------------------------------------------------------------------
+//                  16 ms final solution using ascii boolean record
+// -------------------------------------------------------------------------
 
 #include <iostream>
 using namespace std;
@@ -51,7 +54,9 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
-// // 100 ms
+// ---------------------------------------------------------------------
+//                  100 ms solution
+// ---------------------------------------------------------------------
 //class Solution {
 //public:
 //    int lengthOfLongestSubstring(string s) {
