@@ -35,8 +35,24 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+// Subtract sum to zero while traversing
+class Solution {
+public:
+    bool traverse(TreeNode * node, int sum){
+        sum -= node -> val;
+        if(node -> left == NULL && node -> right == NULL) return sum == 0;
+        else if(node -> left == NULL) return traverse(node -> right, sum);
+        else if(node -> right == NULL) return traverse(node -> left, sum);
+        return traverse(node -> left, sum) || traverse(node -> right, sum);
+    }
+    
+    bool hasPathSum(TreeNode* root, int sum) {
+        if(root == NULL) return false;
+        return traverse(root, sum);
+    }
+};
 
-
+/* Add to sum up
 class Solution {
 public:
     bool traverse(TreeNode * node, int sum, int record){
@@ -52,6 +68,7 @@ public:
         return traverse(root, sum, 0);
     }
 };
+ */
 
 int main(int argc, const char * argv[]) {
     TreeNode node = TreeNode(3);
