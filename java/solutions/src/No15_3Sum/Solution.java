@@ -1,6 +1,5 @@
 package No15_3Sum;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 /**
@@ -18,8 +17,9 @@ public class Solution {
         for(low = 0; low < nums.length - 2; low ++){
 
             if (low - 1 >= 0 && nums[low] == nums[low - 1]) continue;
-
             mid = low + 1; high = nums.length - 1;
+            // Skip all loops that never sums to zero
+            if (2* nums[mid] + nums[low] > 0 || 2* nums[high] + nums[low] < 0) continue;
 
             while (mid < high){
                 sum = nums[low] + nums[mid] + nums[high];
