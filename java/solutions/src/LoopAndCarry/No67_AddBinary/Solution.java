@@ -1,4 +1,4 @@
-package No67_AddBinary;
+package LoopAndCarry.No67_AddBinary;
 
 /**
  * Given two binary strings, return their sum (also a binary string).

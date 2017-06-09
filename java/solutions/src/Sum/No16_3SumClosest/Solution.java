@@ -1,4 +1,4 @@
-package No16_3SumClosest;
+package Sum.No16_3SumClosest;
 
 import java.util.Arrays;
 import java.util.LinkedList;

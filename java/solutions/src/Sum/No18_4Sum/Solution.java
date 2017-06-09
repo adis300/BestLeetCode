@@ -1,4 +1,4 @@
-package No18_4Sum;
+package Sum.No18_4Sum;
 
 import java.util.*;
 
