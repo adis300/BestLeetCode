@@ -28,14 +28,15 @@ public class Solution {
     public int getSum3(int a, int b) {
         if(b == 0) return a;
 
-        int sum,carry;
         // Find out all 1s and shift left for rounding
-        carry = (a&b);
+        int carry = (a&b) << 1;
 
-        // sum up.
-        sum = a^b;
+        // sum up the reminder without carry components
+        return getSum(a^b, carry);//
+    }
 
-        return getSum(sum,carry << 1);//
+    public int getSum4(int a, int b) {
+        return b == 0?a: getSum(a^b, (a&b) << 1);
     }
 
 }

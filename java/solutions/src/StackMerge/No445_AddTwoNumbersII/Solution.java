@@ -11,7 +11,7 @@ import java.util.Stack;
  */
 public class Solution {
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
         ListNode(int x) { val = x; }
