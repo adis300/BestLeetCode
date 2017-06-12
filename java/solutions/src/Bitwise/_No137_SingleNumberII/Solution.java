@@ -1,4 +1,4 @@
-package No137_SingleNumberII;
+package Bitwise._No137_SingleNumberII;
 
 /**
  * Given an array of integers, every element appears three times except for one, which appears exactly once. Find that single one.
@@ -36,6 +36,22 @@ public class Solution {
         // Solve with map using linear space
 
         return 0;
+    }
+    // bit-by-bit construction
+    int singleNumber2(int A[], int n)
+    {
+        int ans = 0;
+        for (int i = 0; i < 32; i++)
+        {
+            int cnt = 0, bit = 1 << i;
+            for (int j = 0; j < n; j++)
+            {
+                if ((A[j] & bit) == 1) cnt++;
+            }
+            if (cnt % 3 != 0)
+                ans |= bit;
+        }
+        return ans;
     }
 
 }
