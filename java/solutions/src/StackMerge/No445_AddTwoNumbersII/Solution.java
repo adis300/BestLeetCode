@@ -18,7 +18,7 @@ public class Solution {
     }
 
     public void addTwoNumbers2(){
-        // Travers down the node and find out the difference and redo 1-1 matching.
+        // Traverse down the node and find out the difference and redo 1-1 matching.
         // Faster but not as elegant
     }
 

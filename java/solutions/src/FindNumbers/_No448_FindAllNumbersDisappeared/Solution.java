@@ -40,13 +40,12 @@ public class Solution {
 
     public List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> res = new LinkedList<>();
-        int temp, j;
+        int temp;
         for (int i = 0; i< nums.length; i ++){
-            j = i;
-            while (nums[j] != j + 1){
-                temp = nums[j];
+            while (nums[i] != i + 1){
+                temp = nums[i];
                 if (nums[temp - 1] == temp) break;
-                nums[j] = nums[temp - 1];
+                nums[i] = nums[temp - 1];
                 nums[temp - 1] = temp;
             }
         }
