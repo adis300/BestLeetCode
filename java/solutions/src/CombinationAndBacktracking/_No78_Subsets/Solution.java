@@ -1,4 +1,4 @@
-package Combination._No78_Subsets;
+package CombinationAndBacktracking._No78_Subsets;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +9,27 @@ import java.util.List;
  */
 public class Solution {
 
+    // Smart way to compose subsets
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> results = new ArrayList<>();
+        results.add(new ArrayList<>());
+        if (nums.length == 0) return results;
+
+        List<List<Integer>> copy;
+        for (int num : nums) {
+            copy = new ArrayList<>();
+            for (List<Integer> result : results) {
+                copy.add(new ArrayList<>(result));
+                result.add(num);
+            }
+            results.addAll(copy);
+        }
+
+        return results;
+    }
+
+
+    // Use backtracking
     private List<Integer> copy(List<Integer> original){
         return new ArrayList<>(original);
     }
@@ -31,24 +52,6 @@ public class Solution {
         return results;
     }
 
-    // Smart way to compose subsets
-    public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> results = new ArrayList<>();
-        results.add(new ArrayList<>());
-        if(nums.length == 0) return results;
-
-        List<List<Integer>> copy;
-        for (int num : nums){
-            copy = new ArrayList<>();
-            for (List<Integer> result: results){
-                copy.add(new ArrayList<>(result));
-                result.add(num);
-            }
-            results.addAll(copy);
-        }
-
-        return results;
-    }
 
     public static void main(String[] args){
         new Solution().subsets1(new int[]{1,2,3});

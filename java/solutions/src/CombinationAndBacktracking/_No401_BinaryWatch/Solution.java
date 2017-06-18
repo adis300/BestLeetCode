@@ -1,4 +1,4 @@
-package Combination._No401_BinaryWatch;
+package CombinationAndBacktracking._No401_BinaryWatch;
 
 import java.util.ArrayList;
 import java.util.List;

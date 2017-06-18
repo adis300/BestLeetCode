@@ -1,4 +1,4 @@
-package No229_MajorityElementII;
+package Voting.No229_MajorityElementII;
 
 import java.util.LinkedList;
 import java.util.List;
