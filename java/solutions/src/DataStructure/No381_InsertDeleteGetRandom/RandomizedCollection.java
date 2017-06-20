@@ -1,5 +1,8 @@
-package No381_InsertDeleteGetRandom;
+package DataStructure.No381_InsertDeleteGetRandom;
 
+/**
+ * Terrible problem
+ */
 public class RandomizedCollection {
 
     /** Initialize your data structure here. */
