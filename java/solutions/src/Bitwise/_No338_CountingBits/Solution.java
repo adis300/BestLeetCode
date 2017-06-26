@@ -20,6 +20,14 @@ import java.util.Map;
  */
 public class Solution {
 
+    // Most concise solution with bit shift. DP Like
+    public int[] countBits3(int num) {
+        int[] f = new int[num + 1];
+        for (int i=1; i<=num; i++) f[i] = f[i >> 1] + (i & 1);
+        return f;
+    }
+
+    // Naive solution
     public int[] countBits(int n) {
         int[] result = new int[n + 1];
         int count, num;
@@ -67,14 +75,6 @@ public class Solution {
         if(k < 2) return k;
         return countBitsHelper2(k/2) + (k & 1);
     }
-
-    // Most concise solution with bit shift.
-    public int[] countBits3(int num) {
-        int[] f = new int[num + 1];
-        for (int i=1; i<=num; i++) f[i] = f[i >> 1] + (i & 1);
-        return f;
-    }
-
 
     public static void main(String[] args){
         new Solution().countBits2(8);

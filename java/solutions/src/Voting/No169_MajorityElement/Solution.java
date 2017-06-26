@@ -15,16 +15,16 @@ public class Solution {
     }
     // Moore voting algorithm, 多者胜
     public int majorityElement3(int[] nums) {
-        int count=0, ret = 0;
+        int count=0, majority = 0;
         for (int num: nums) {
             if (count==0)
-                ret = num;
-            if (num!=ret)
+                majority = num;
+            if (num!=majority)
                 count--;
             else
                 count++;
         }
-        return ret;
+        return majority;
     }
 
     public int majorityElement(int[] nums) {

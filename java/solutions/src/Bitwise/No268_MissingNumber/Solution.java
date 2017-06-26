@@ -15,18 +15,6 @@ import java.util.Set;
  */
 
 public class Solution {
-    // Using a hash set, linear space requirement
-    public int missingNumber(int[] nums) {
-        int n = nums.length + 1;
-        Set<Integer> set = new HashSet<>();
-        for (int i = 0; i < n; i ++){
-            set.add(i);
-        }
-        for (int i : nums){
-            set.remove(i);
-        }
-        return (Integer)set.toArray()[0];
-    }
 
     // 1.XOR
     public int missingNumber1(int[] nums) { //xor
@@ -44,6 +32,20 @@ public class Solution {
             N -= i;
         return N;
     }
+
+    // Using a hash set, linear space requirement
+    public int missingNumber(int[] nums) {
+        int n = nums.length + 1;
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < n; i ++){
+            set.add(i);
+        }
+        for (int i : nums){
+            set.remove(i);
+        }
+        return (Integer)set.toArray()[0];
+    }
+
     //3.Binary Search
     public int missingNumber3(int[] nums) { //binary search
         //

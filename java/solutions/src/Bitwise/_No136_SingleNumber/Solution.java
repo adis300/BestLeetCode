@@ -1,4 +1,4 @@
-package Bitwise.No136_SingleNumber;
+package Bitwise._No136_SingleNumber;
 
 /**
  * Given an array of integers, every element appears twice except for one. Find that single one.

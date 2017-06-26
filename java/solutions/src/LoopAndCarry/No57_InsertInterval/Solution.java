@@ -27,13 +27,9 @@ public class Solution {
        Interval(int s, int e) { start = s; end = e; }
     }
 
+    // Find the insersion point and merge the left overs.
     public List<Interval> insert(List<Interval> intervals, Interval newInterval){
         List<Interval> result = new ArrayList<>();
-        /* will fall through the while loop.
-        if (intervals.isEmpty()){
-            result.add(newInterval);
-            return result;
-        }*/
 
         int i = 0;
         Interval interval;

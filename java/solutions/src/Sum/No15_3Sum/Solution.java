@@ -16,7 +16,7 @@ public class Solution {
         int mid, low, high, sum;
         for(low = 0; low < nums.length - 2; low ++){
 
-            if (low - 1 >= 0 && nums[low] == nums[low - 1]) continue;
+            if (low >= 1 && nums[low] == nums[low - 1]) continue;  //Skip duplicated elements
             mid = low + 1; high = nums.length - 1;
             // Skip all loops that never sums to zero
             if (2* nums[mid] + nums[low] > 0 || 2* nums[high] + nums[low] < 0) continue;
