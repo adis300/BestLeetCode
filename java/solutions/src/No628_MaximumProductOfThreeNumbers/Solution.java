@@ -40,21 +40,22 @@ public class Solution {
 
     public int maximumProduct1(int[] nums) {
         int[] posMax = new int[]{Integer.MIN_VALUE,Integer.MIN_VALUE,Integer.MIN_VALUE};
+        // Use different sign. also, updates the first min value first, the second will be auto-updated
         int[] negMax = new int[]{Integer.MAX_VALUE, Integer.MIN_VALUE};
 
         for (int num: nums){
-            if (num <= negMax[0]) {
-                negMax[0] = num;
+            if (num < negMax[0]) {
                 negMax[1] = negMax[0];
+                negMax[0] = num;
             }
             else if (num < negMax[1]) negMax[1] = num;
 
-            if (num >= posMax[0]) {
+            if (num > posMax[0]) {
                 posMax[2] = posMax[1];
                 posMax[1] = posMax[0];
                 posMax[0] = num;
             }
-            else if (num >= posMax[1]){
+            else if (num > posMax[1]){
                 posMax[2] = posMax[1];
                 posMax[1] = num;
             }
