@@ -1,4 +1,4 @@
-package No628_MaximumProductOfThreeNumbers;
+package Counting._No628_MaximumProductOfThreeNumbers;
 
 /**
 
